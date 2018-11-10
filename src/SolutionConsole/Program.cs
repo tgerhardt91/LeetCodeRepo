@@ -8,33 +8,63 @@ using LeetCodeRepo.Solutions;
 
 namespace SolutionConsole
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
-            var t = GetSolutions();
+            var helper = new SolutionConsoleHelper();
 
-            foreach (var implementation in t)
-            {
-                Console.WriteLine(implementation.Difficulty());
-            }
+            var solutions = helper.GetSolutionsOrderedById().ToList();
 
-            var x = 2;
+            var selection = GetSolutionSelectionFromUser(solutions.ToList());
+
+            ExecuteSelection(solutions, selection);
         }
 
-        private static IEnumerable<IAmALeetCodeSolution> GetSolutions()
+        private static void ExecuteSelection(IEnumerable<IAmALeetCodeSolution> solutions, int selection)
         {
-            var interfaceType = typeof(IAmALeetCodeSolution);
+            var solutionToExecute = solutions.FirstOrDefault(s => s.SolutionId() == selection);
 
-            var solutionAssembly = Assembly.GetAssembly(interfaceType);
+            solutionToExecute?.Execute();
+        }
 
-            var interfaceImplementations = solutionAssembly
-                .GetTypes()
-                .Where(x => x.GetInterfaces()
-                .Contains(interfaceType));
+        private static int GetSolutionSelectionFromUser(List<IAmALeetCodeSolution> solutions)
+        {
+            DisplaySolutions(solutions);
 
-            return interfaceImplementations.Where(x => x.FullName != null).Select(x =>
-                solutionAssembly.CreateInstance(x.FullName) as IAmALeetCodeSolution);
+            return PromptUserForSelection(solutions);
+        }
+
+        private static void DisplaySolutions(IEnumerable<IAmALeetCodeSolution> solutions)
+        {
+            const int textSpacer = 3;
+
+            var space = new String(' ', textSpacer);
+
+            Console.WriteLine($"Solution# {space}|{space} Description {space}|{space} Difficulty");
+            Console.WriteLine();
+
+            foreach (var solution in solutions)
+            {
+                Console.WriteLine($"{solution.SolutionId()} {space}|{space} {solution.Description()} {space}|{space} {solution.Difficulty()}");
+            }
+        }
+
+        private static int PromptUserForSelection(List<IAmALeetCodeSolution> solutions)
+        {
+            Console.WriteLine("Please select a problem to run (1, 2, etc.)");
+
+            var selection = Convert.ToInt32(Console.ReadLine());
+
+            var validSelections = solutions.Select(s => s.SolutionId());
+
+            if (!validSelections.Contains(selection))
+            {
+                Console.WriteLine("Invalid Selection");
+                PromptUserForSelection(solutions);
+            }
+
+            return selection;
         }
     }
 }
