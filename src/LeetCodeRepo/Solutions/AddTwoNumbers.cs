@@ -31,6 +31,8 @@ namespace LeetCodeRepo.Solutions
 
         public string Difficulty() => "Medium";
 
+        public string Description() => "Add Two Numbers";
+
         private static int Solution(Node list1, Node list2)
         {
             return GetIntegerFromLinkedList(list1) + GetIntegerFromLinkedList(list2);

@@ -9,5 +9,6 @@ namespace LeetCodeRepo.Solutions
         bool Execute();
         int SolutionId();
         string Difficulty();
+        string Description();
     }
 }
