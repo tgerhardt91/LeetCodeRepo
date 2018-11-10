@@ -1,0 +1,9 @@
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\bin\Debug\netstandard2.0\LeetCodeRepo.deps.json
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\bin\Debug\netstandard2.0\LeetCodeRepo.dll
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\obj\Debug\netstandard2.0\LeetCodeRepo.csproj.CoreCompileInputs.cache
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\obj\Debug\netstandard2.0\LeetCodeRepo.AssemblyInfoInputs.cache
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\obj\Debug\netstandard2.0\LeetCodeRepo.AssemblyInfo.cs
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\bin\Debug\netstandard2.0\LeetCodeRepo.pdb
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\obj\Debug\netstandard2.0\LeetCodeRepo.dll
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\obj\Debug\netstandard2.0\LeetCodeRepo.pdb
+C:\Users\Travis\gitRepos\LeetCodeRepo\LeetCodeRepo\LeetCodeRepo\obj\Debug\netstandard2.0\LeetCodeRepo.csprojResolveAssemblyReference.cache
