@@ -567,11 +567,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Travis\\gitRepos\\LeetCodeRepo\\LeetCodeRepo\\LeetCodeRepo\\LeetCodeRepo.csproj",
+      "projectUniqueName": "C:\\Users\\Travis\\gitRepos\\LeetCodeRepo\\src\\LeetCodeRepo\\LeetCodeRepo.csproj",
       "projectName": "LeetCodeRepo",
-      "projectPath": "C:\\Users\\Travis\\gitRepos\\LeetCodeRepo\\LeetCodeRepo\\LeetCodeRepo\\LeetCodeRepo.csproj",
+      "projectPath": "C:\\Users\\Travis\\gitRepos\\LeetCodeRepo\\src\\LeetCodeRepo\\LeetCodeRepo.csproj",
       "packagesPath": "C:\\Users\\Travis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Travis\\gitRepos\\LeetCodeRepo\\LeetCodeRepo\\LeetCodeRepo\\obj\\",
+      "outputPath": "C:\\Users\\Travis\\gitRepos\\LeetCodeRepo\\src\\LeetCodeRepo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
